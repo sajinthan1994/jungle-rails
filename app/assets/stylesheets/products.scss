@@ -13,6 +13,8 @@ main section.categories-show {
       // so that footer within can be positioned absolutely
       position:  relative;
 
+      overflow: hidden;
+
       border:        1px solid #ccc;
       border-radius: 5px;
       padding:       15px;
@@ -57,6 +59,22 @@ main section.categories-show {
 
         footer {
           opacity: 1.0;
+        }
+      }
+
+      .badge-danger {
+        position: relative;
+        left: -3rem;
+        top: -2.5rem;
+        background-color: #eda6a6;
+        height: 6rem;
+        width: 12rem;
+        
+        p {
+          position: relative;
+          top: 2.25rem;
+          left: 0.75rem;
+          font-size: 1.5rem;
         }
       }
 
