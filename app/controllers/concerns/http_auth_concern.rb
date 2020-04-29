@@ -6,7 +6,7 @@ module HttpAuthConcern
   def http_authenticate
     
       authenticate_or_request_with_http_basic do |username, password|
-          username == ENV['AUTH_USERNAME'].to_s && password == ENV['AUTH_PASSWORD'].to_s
+          username == ENV['AUTH_USERNAME'] && password == ENV['AUTH_PASSWORD']
       end
   end
 end
